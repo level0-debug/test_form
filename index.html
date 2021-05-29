@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="dist/css/bootstrap.css" rel="stylesheet" >
+    <link href="style.css" rel="stylesheet" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="code.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <div class="row g-3">
+        <div class="row">
+            <H2 class="text-muted">Ваша заявка</H2>
+        </div>
+        <div class="row" >
+            <div class="col-md-6">
+                <div id="divFIO" class="input-group input-group-lg">
+                    
+                    <input type="text" class="form-control" placeholder="Фамилия, Имя, Отчество *" id="FIO">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row" >
+            <div class="col-md-6">
+                <div id="divPosition" class="input-group input-group-lg">
+                    <input type="text" class="form-control" placeholder="Должность *" id="Position">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div id="divOrganization" class="input-group input-group-lg">
+                    <input type="text" class="form-control" placeholder="Организация *" id="Organization">
+                </div> 
+            </div>
+        </div>
+        <div class="row" >
+            <div id="divRegion" class="col-md-6">
+              <select class="form-select form-select-lg" id="Region" onclick="clickColor('Region')">
+                <option selected disabled hidden>Регион *</option>
+                <option value="Москва">Москва</option>
+                <option value="Санкт-Петербург">Санкт-Петербур</option>
+                <option value="Саратов">Саратов</option>
+                <option value="Саранск">Саранск</option>
+              </select>
+              
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div id="divAdres" class="input-group input-group-lg">
+                    <input type="text" class="form-control" placeholder="Адрес *" id="Adres">
+                    
+                </div>  
+            </div>
+        </div>  
+        <div class="row">
+            <div class="col-md-3">
+                <div id="divContact" class="input-group input-group-lg">
+                    <input type="text" class="form-control" placeholder="Контактный телефон *" id="Contact">
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div id="divEmail" class="input-group input-group-lg">
+                    <input type="text" class="form-control" placeholder="Электронная почта *" id="Email">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="input-group input-group-lg">
+                    <input type="text" class="form-control" placeholder="WEB" id="WEB">
+                </div>  
+            </div>
+        </div>
+        <div class="row" >
+            <div id='divServices' class="col-md-6">
+              <select class="form-select form-select-lg " id="Services" onclick="clickColor('Services')">
+                <option selected disabled hidden>Пользовались ли Вы ранее услугами нашей лаборатории *</option>
+                <option value="Да">Да</option>
+                <option value="Нет">Нет</option>
+               </select>
+               
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 150px"></textarea>
+                    <label for="floatingTextarea" style="color: #6c757d;">Комментарии</label>
+                  </div>  
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div id="divGridCheck" class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck" style="width: 30px; height: 30px;">
+                   <p> С условиями <span class="contract">(договор на диагностику картофеля, договор на диагностику овощных культур, договор на химический анализ)</span> ознакомлен и согласен </p>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"> 
+                <div class="row msg">Общая сумма заказа:</div>
+                <div class="row price">13 800 P</div>
+            </div> 
+            <div class="col-md-3">
+                <div class="mb-3">
+                    <button class="btn btn-success sbt" onclick="inputInfo()">Отправить</button>
+                </div>
+            </div>     
+        </div>    
+    </div> 
+        <footer class="border-top" style="background-color:rgba(224, 222, 222, 0.2);">
+        
+            <div class="row">
+                <div class="col-md-6 myfooter">
+                    <p class="mx-auto mx-md-5">© «Иследовательский Центр «ФитоИнженерия» — 2021</p>
+                    <p class="mx-auto mx-md-5">+7 985 855-92-72, +7 (499) 271-05-72</p>
+                    <p class="mx-auto mx-md-5"><a href="#">info@phytoengineering.ru</a></p>
+                    <p class="mx-auto mx-md-5"><a href="#"><img src="https://cdn.icon-icons.com/icons2/195/PNG/256/YouTube_23392.png" alt="youTube"> АгроПарк 2017</a></p>
+                    <p class="mx-auto mx-md-5">Создание сайта — <a href="#">Skillpoint</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+   
+        
+
+   
+    
+</body>
+</html>
